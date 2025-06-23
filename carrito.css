@@ -1,0 +1,559 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body{
+    background-color: white;
+}
+.navbar__top{
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: #98002e; 
+   padding: 10px 20px;
+   color: white;
+   
+}
+
+.logo{
+    height: 100px;
+    background-color: #98002e;
+    border-radius: 50%; 
+}
+
+.titulo{
+   flex: 1;
+   text-align: center;
+   font-size: 3rem;
+   font-weight: bold;
+   background-color: white;
+   color: #98002e;
+   padding: 5px 10px;
+   margin: 0 20px;
+   border-radius: 5px;
+   font-family: sans-serif;
+}
+
+.titulo-movil{
+    display: none;
+}
+
+.home{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-right: 50px;
+}
+
+.home:hover{
+    background-color: white;
+    color: #98002e;
+    transform: scale(1.5);
+
+}
+
+.cart{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    border-radius: 5px;
+    transition: background 0.3s;
+    
+    
+}
+
+.cart:hover{
+    background-color: white;
+    color: #98002e;
+    transform: scale(1.5);
+}
+
+.car{
+  display: none;
+}
+
+.navbar__menu {
+    margin-top: 3px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #98002e;
+    padding: 20px 12px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0, 0.2);
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.navbar__menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 20px 12px;
+    display: bl;
+    
+    
+}
+
+.navbar__menu ul{
+    display: flex;
+}
+    
+
+
+.navbar__menu a:hover{
+    color: #98002e;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px 12px;
+    transition: background 0.3s, color 0.3s;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+
+
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.texto__compra{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    background-color: #98002e;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+
+
+.buy{
+  background-color: white;
+  width: 80%;
+  max-width: 800px;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+
+.buy__texto1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  font-size: 4rem;
+}
+.buy__imagen{
+  border-radius: 20px;
+}
+
+.modo{
+    display: flex;
+    justify-content: center;
+}
+
+.buy__tipo-entrega {
+  background-color: #910028;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  align-content: space-between;
+  transition: 0.5s;
+  margin-right: 20px;
+  }
+
+.buy__tipo-entrega:hover{
+    background-color: white;
+    color: #98002e;
+    border: 2px solid #98002e;
+}
+
+.buy__textod{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-content: center;
+    padding-left: 20px;
+}
+
+.buy__bike{
+    
+    font-size: 50px;
+    transition: 0.5s;
+}
+
+.buy__bike:hover{
+    background-color: white;
+    color: #98002e;
+}
+
+.buy__personw{
+    background-color: #910028;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    align-content: space-between;
+    transition: 0.5s;
+    margin-left: 20px;
+}
+
+.buy__person{
+    font-size: 50px;
+    transition: 0.5s;
+}
+
+.buy__personw:hover{
+    background-color: white;
+    color: #98002e;
+    border: 2px solid #98002e;
+}
+
+.buy__textop{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-content: center;
+    padding-left: 20px;
+}
+
+.buy__producto {
+    background-color: #98002e;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+.buy__imagen{
+    width: 30%;
+}
+
+.buy__texto{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #910028;
+    display: flex;
+    justify-content: center;
+}
+
+.buy__metodo h2 {
+    font-size: 30px;
+    color: #910028;
+    margin: 8px 0;
+    text-align: left;
+    font-family: sans-serif;
+  }
+
+.buy__pago h2 {
+    margin-top: 10px;
+    font-family: sans-serif;
+    color: #910028;
+    font-size: 30px;
+  }
+
+.icon-pago{
+    display: flex;
+    align-content: space-evenly;
+    font-size: 150px;
+    padding: 50px;
+}
+
+.qr i{ 
+    color: #910028;
+    padding-right: 90px;
+    transition: 0.5s;
+   
+}
+
+.qr i:hover{
+  transform: scale(1.2);
+}
+
+.money i{
+    color: #910028;
+    padding-left: 80px;
+    transition: 0.5s;
+}
+
+.money i:hover{
+  transform: scale(1.2);
+}
+
+.buy__icono {
+  display: flex;
+  gap: 25px;
+}
+
+.buy__icono a {
+  font-size: 32px;
+  color: #910028;
+  text-decoration: none;
+}
+
+.buy__pagar {
+  border: 2px solid #910028;
+  padding: 15px 40px;
+  border-radius: 12px;
+  background-color: #910028;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 50px;
+  transition: 0.5s;
+}
+
+.buy__pagar:hover{
+  background-color: white;
+  color: #910028;
+
+}
+
+.piepag{
+    background-color: #98002e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+    flex-wrap: wrap;
+    
+}
+
+
+.piepag__caja{
+    display: flex;
+    gap: 105px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 1 1 30%;
+
+}
+
+.piepag__icono {
+    color: #ffcc00;
+    font-size: 40px;
+    transition: transform 0.3s;
+  }
+
+.piepag__icono:hover {
+  transform: scale(1.5);
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .navbar__top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+
+  .logo {
+    height: 60px;
+    margin-right: 10px;
+  }
+
+  .titulo {
+    display: none;
+  }
+
+  .home{
+    display: none;
+  }
+
+  .titulo-movil{
+    display: block;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+
+  .navbar__iconos{
+    color: white;
+    
+  }
+ 
+  .navbar__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 10px;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .navbar__space{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    align-items: center;
+  }
+
+  .navbar__menu a {
+    font-size: 13px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .navbar__menu ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .navbar__menu a:hover{
+    font-size: 14px;
+  }
+
+  .prom{
+    display: none;
+  }
+
+  .car{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 10px;
+  }
+
+  .texto__compra{
+    font-size: 2rem;
+  }
+
+  .buy__texto1{
+    font-size: 1rem;
+  }
+
+  .buy__imagen{
+    width: 50%;
+  }
+
+  .buy__textod{
+    font-size: 12px;
+  }
+
+  .buy__textop{
+    font-size: 12px;
+  }
+
+
+  .buy__tipo-entrega i{
+    font-size: 3rem;
+  }
+
+  .buy__personw i{
+    font-size: 3rem;
+  }
+  
+
+  .cart{
+    color: #98002e;
+  }
+
+  .cart i{
+    display: none;
+  }
+
+  .home i {
+    display: none;
+  }
+
+  .menu{
+    position: static;
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+
+
+  .buy{
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  .icon-pago{
+    font-size: 100px;
+  }
+
+  .modo{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  
+
+  .modo i{
+    align-items: center;
+  }
+
+
+
+  
+  .piepag {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    min-height: 30dvh;
+  }
+
+
+  .piepag__caja {
+    gap: 60px;
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .piepag__caja i{
+    font-size: 30px;
+  }
+
+  .piepag__icono {
+    font-size: 30px;
+  }
+}
+
+  
